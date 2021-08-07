@@ -6,17 +6,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
+
     <title>EvolvX</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top scrolling-navbar">
+    <header>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
         <div class="container">
            <a class="navbar-brand text-white">EvolvX</a>
            <button class="navbar-toggler navbar-toggler-right text-center" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                <span class="navbar-toggler-icon"></span>
            </button>  
            <div class="collapse navbar-collapse" id="navbarResponsive">
-               <ul class="navbar-nav mx-auto">
+               <ul class="navbar-nav ml-auto">
                    <li class="nav-item">
                        <a class="nav-link" href="#">Home</a>
                    </li>
@@ -42,16 +44,19 @@
                     <a class="nav-link" href="#">More</a>
                 </li>
                </ul>
-               <button class="btn btn-success text-dark" type="submit">Sign In</button>
+               <a class="btn alert-primary" href="#" role="button" target="_blank">
+                <strong>Sign In</strong>
+              </a>
            </div>
         </div>
     </nav>
+</header>
 
-    <header class="showcase text-center">
-        <div class="container">
+    <section class="showcase text-center expand-md position-relative">
+        <div class="container-fluid">
             <div class="row ">
-                <video autoplay loop muted>
-                    <source src="Stars-Overlay.mp4" type="video/mp4">
+                <!--video autoplay loop muted>
+                    <source src="stars.mp4" type="video/mp4">
                 </video>
                     <div id='title' class="col md-5 mx-auto">
                        EvolvX
@@ -60,12 +65,46 @@
                        <span>Evolution</span>
                        <span>Happens</span>
                        <span>Here</span>
-                     </div>
+                     </div-->
+
+                     <svg viewBox="0 0 1800 600">
+                      <symbol id="s-text">
+                        <text text-anchor="middle"
+                              x="50%"
+                              y="35%"
+                              class="webcoderskull"
+                              >
+                          Evolvx 
+                        </text>
+                        <text text-anchor="middle"
+                              x="50%"
+                              y="68%"
+                              class="text--line"
+                              >
+                         Evolvx
+                        </text>
+                        
+                      </symbol>
+                      
+                      <g class="g-ants">
+                        <use xlink:href="#s-text"
+                          class="webcoderskull-1"></use>     
+                        <use xlink:href="#s-text"
+                          class="webcoderskull-1"></use>     
+                        <use xlink:href="#s-text"
+                          class="webcoderskull-1"></use>     
+                        <use xlink:href="#s-text"
+                          class="webcoderskull-1"></use>     
+                        <use xlink:href="#s-text"
+                          class="webcoderskull-1"></use>     
+                      </g>
+                      
+                      
+                    </svg>
                      
             </div>
         </div>
-    </header>
-    <hr class="featurette-divider mx-auto">
+    </section>
     <section class="about-us" id="about">
         <div class="container text-center">
             <div class="row">
@@ -187,8 +226,8 @@
     <section class="social media">
         <div class="container shadow-lg p-3 mb-5 bg-white rounded">
             <div class="card">
-            <div class="content-section-heading featurette-divider">
-                <h2 class="section-title text-center">Follow Us On</h2>
+            <div class="content-section-heading featurette">
+                <h2 class="title text-center">Follow Us On <img src="images/like.gif" class="like mx-auto"></h2>
                 <hr class="mx-auto">
             </div>
             <div class="row text-center mx-auto">
@@ -275,6 +314,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  
+    <script src="js/script.js"></script>
+
+  
+  
   
   </body>
 </html>
