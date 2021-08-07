@@ -168,3 +168,17 @@ footer{
   width: 100%;
   padding: 3rem 0;
 }
+@media screen and (max-width: 480px){
+  #title{
+    font-size: small;
+    top: 15%;
+  }
+  #subtitle{
+    font-size: small;
+    top: 25%;
+  }
+  video{
+    height: 42vh;
+  }
+  
+}
