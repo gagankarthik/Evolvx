@@ -1,0 +1,266 @@
+@import url('https://fonts.google.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  scroll-behavior: smooth;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav-bg{
+    background: transparent;
+    backdrop-filter: blur(5px);
+}
+.nav-bg.scrolled{
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(5px);
+  
+}
+.nav-bg.scrolled a{
+    color: #000;
+}
+
+
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+    font-size: 1.1rem;
+    padding: 0 0.8rem;
+  }
+  #navbarSupportedContent > ul > li:nth-child(n) > a:hover{
+    color: #00BF85;
+  }
+
+/*-------------------   text anima 2   ---------- */
+
+  
+  #gravity {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+     background: #000;
+    background-size: 0.12em 100%;
+    font: 16em/1 Arial;
+  }
+
+  
+  #title {
+    position: absolute;
+    font-weight: 300;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin-top: -80px;
+    font-size: 130px;
+    text-align: center;
+    letter-spacing: 20px;
+    padding-left: 20px;
+    background: -webkit-linear-gradient(white, #dbdde0, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-name: animGravity;
+  }
+  
+  #subtitle {
+    position: absolute;
+    font-weight: 300;
+    top: 60%;
+    left: 0;
+    right: 0;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 6px;
+  }
+  #subtitle span {
+    color: #d8d8d8;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+  #subtitle span:nth-child(1) {
+    animation-name: animDont;
+  }
+  #subtitle span:nth-child(2) {
+    animation-name: animLet;
+  }
+  #subtitle span:nth-child(3) {
+    animation-name: animGo;
+  }
+  
+  @keyframes animStar {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-2000px);
+    }
+  }
+  @keyframes animGravity {
+    0% {
+      transform: translateY(-26px);
+      opacity: 0;
+    }
+    30%, 80% {
+      letter-spacing: 40px;
+      padding-left: 40px;
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    92%, 100% {
+      letter-spacing: 35px;
+      padding-left: 35px;
+      transform: translateY(-4px);
+      opacity: 0;
+    }
+  }
+  @keyframes animDont {
+    0%	, 15% {
+      transform: translateY(-26px);
+      opacity: 0;
+    }
+    35%, 80% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    92%, 100% {
+      transform: translateY(-4px);
+      opacity: 0;
+    }
+  }
+  @keyframes animLet {
+    0%	, 25% {
+      transform: translateY(-26px);
+      opacity: 0;
+    }
+    45%, 80% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    92%, 100% {
+      transform: translateY(-4px);
+      opacity: 0;
+    }
+  }
+  @keyframes animGo {
+    0%	, 35% {
+      transform: translateY(-26px);
+      opacity: 0;
+    }
+    55%, 80% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    92%, 100% {
+      transform: translateY(-4px);
+      opacity: 0;
+    }
+  }
+  
+ 
+  
+ 
+  /*--------   particles    ------------------- */
+ 
+  
+  /* ------- Arrow bounce animation --------------*/
+
+  .arrow {
+    position: absolute;
+    text-align: center;
+    color: #d61c59;
+    top: 90%;
+    left: 50%;
+    
+  }
+  .bounce {
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
+  @-webkit-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  hr{
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    overflow: visible;
+    box-sizing: content-box;
+  }
+ 
+  
+  /*----------------     footer     -----------------*/
+
+  footer{
+    background: #f8f8fc;
+    width: 100%;
+    padding: 3rem 0;
+  }
+  .footer-divider{
+    margin: 1rem 0;
+  
+  }
+
+
+
+
+
+/* -------------------  Mobile View        ---------------------------*/
+
+  @media screen and (max-width: 480px){
+    .arrow{
+      top: 85%;
+      left: 46%;
+    }
+    #title{
+        font-size: 50px;
+        font-weight: 100;
+    }
+    
+  }
