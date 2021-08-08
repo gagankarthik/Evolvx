@@ -11,7 +11,7 @@
   </head>
   <body>
     <header>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <nav class="navbar navbar-expand-md fixed-top">
         <div class="container">
            <a class="navbar-brand text-white">EvolvX</a>
            <button class="navbar-toggler navbar-toggler-right text-center bg-light" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -20,13 +20,13 @@
            <div class="collapse navbar-collapse" id="navbarResponsive">
                <ul class="navbar-nav ml-auto">
                    <li class="nav-item">
-                       <a class="nav-link" href="#">Home</a>
+                       <a class="nav-link text-white" href="#">Home</a>
                    </li>
                    <li class="nav-item">
-                    <a class="nav-link" href="#about">About Us</a>
+                    <a class="nav-link text-white" href="#about">About Us</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Jobs
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -38,10 +38,10 @@
                     </div>
                   </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link text-white" href="#">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">More</a>
+                    <a class="nav-link text-white" href="#">More</a>
                 </li>
                </ul>
                <a class="btn alert-primary" href="login.html" role="button" target="_blank">
@@ -59,14 +59,14 @@
                       <symbol id="s-text">
                         <text text-anchor="middle"
                               x="50%"
-                              y="35%"
+                              y="70%"
                               class="webcoderskull"
                               >
-                          Welcome To
+                          Evolution Happens Here
                         </text>
                         <text text-anchor="middle"
                               x="50%"
-                              y="68%"
+                              y="40%"
                               class="text--line"
                               >
                          Evolvx
@@ -87,9 +87,13 @@
                           class="webcoderskull-1"></use>     
                       </g>
                        </svg>
-                       <div class="arrow bounce mx-auto">
+
+                       <div class="arrow bounce">
                       <ion-icon name="arrow-down-outline" size="large"></ion-icon>
                       </div>
+
+                      <canvas id="canvas"></canvas>
+                     
             </div>
            
         </div>
@@ -108,8 +112,8 @@
     <hr class="featurette-divider mx-auto">
     <section class="services text-center" id="services">
         <div class="container">
-            <div class="content-section-heading featurette-divider">
-                <h2 class="section-title">Services</h2>
+            <div class="content-section-heading">
+                <h2 class="section-title mb-4">Services</h2>
             </div>
             <div class="row">
                 <div class="col-lg-4">
@@ -167,7 +171,6 @@
             </div>
         </div>
     </section>
-    
     <hr class="featurette-divider mx-auto">
     <section class="more" id="more">
         <div class="container my-4 shadow-lg p-3 mb-5 bg-white rounded">
@@ -212,40 +215,25 @@
         </div>
     </section>
   
-    <section class="social media">
-        <div class="container shadow-lg p-3 mb-5 bg-white rounded">
-            <div class="card">
-            <div class="content-section-heading featurette">
-                <h2 class="title text-center">Follow Us On <img src="images/like.gif" class="like mx-auto"></h2>
-                <hr class="mx-auto">
-            </div>
-            <div class="row text-center mx-auto">
-                <div class="col">
-                    <ion-icon size="large" name="logo-instagram"></ion-icon> <p>@evolvx</p>
-                </div>
-                <div class="col">
-                    <ion-icon size="large" name="logo-linkedin"></ion-icon> <p>@evolvx</p>
-                </div>
-                <div class="col">
-                    <ion-icon size="large" name="logo-facebook"></ion-icon> <p>@evolvx</p>
-                </div>
-                <div class="col">
-                    <ion-icon size="large" name="logo-twitter"></ion-icon> <p>@evolvx</p>
-                </div>
-            </div>
-            </div>
+   
 
-        </div>
- </section>
-
-
-
-    <hr class="featurette-divider mx-auto">
     <footer class="footer-concept">
         <div class="container">
         <div class="row">
             <div class="col-12 col-md">
               <h2 class="title">EvolvX</h2>
+              <br>
+              <div class="row mx-auto">
+                <div class="col">
+                    <ion-icon name="logo-instagram" mx-auto></ion-icon>
+                </div>
+                <div class="col">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </div>
+                <div class="col">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </div>
+            </div>
             </div>
             <div class="col-6 col-md">
               <h5>Features</h5>
@@ -286,9 +274,11 @@
               </ul>
             </div>
           </div>
+          <hr class="footer-divider "> 
         <p class="float-right">
             <a href="#"><ion-icon size="large" name="arrow-up-circle-outline"></ion-icon></a></p>
-        <p class="copyrights">&copy; 2021-2022 EvolvX, Inc · <a href="#">Privacy</a> · <a href="#">Terms</a> </p>
+
+        <p class="copyrights">&copy; Evolvx Inc </p>
         </div>
     </footer>
 
@@ -306,6 +296,7 @@
   
     <script src="js/script.js"></script>
 
+   
   
   
   
