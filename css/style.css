@@ -31,12 +31,10 @@ nav a{
  }
 .collapse{
     border-radius: 3px;
-    backdrop-filter: blur(5px);
-    padding: 1rem;
  }
  
 #navbarSupportedContent > ul > li:nth-child(n) > a{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding: 0 0.8rem;
   }
   #navbarSupportedContent > ul > li:nth-child(n) > a:hover{
@@ -53,6 +51,7 @@ nav a{
      background: #000;
     
   }
+  
 
   
   #title {
@@ -257,3 +256,96 @@ nav a{
     }
     
   }
+
+
+
+
+  /*----------------------------------------    otehr ------------------------------*/
+
+
+  img {
+    max-width: 100%; }
+  
+  
+  /*===========================
+          6.TEAM css 
+  ===========================*/
+  @media (max-width: 767px) {
+    .team-area {
+      padding-top: 75px;
+      padding-bottom: 80px; } }
+  
+  .single-team .team-image img {
+    width: 100%; }
+  
+  .single-team .team-content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 15px;
+    position: relative;
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s; }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .single-team .team-content {
+        padding: 30px 0; } }
+    .single-team .team-content .team-name a {
+      font-size: 18px;
+      font-weight: 600;
+      color: #121619;
+      font-family: 'Hind', sans-serif;
+      -webkit-transition: all 0.4s ease-out 0s;
+      -moz-transition: all 0.4s ease-out 0s;
+      -ms-transition: all 0.4s ease-out 0s;
+      -o-transition: all 0.4s ease-out 0s;
+      transition: all 0.4s ease-out 0s; }
+      .single-team .team-content .team-name a:hover {
+        color: #EB3656; }
+    .single-team .team-content .sub-title {
+      font-size: 14px;
+      color: #646464; }
+    .single-team .team-content .social {
+      margin-top: -35px;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: all 0.4s ease-out 0s;
+      -moz-transition: all 0.4s ease-out 0s;
+      -ms-transition: all 0.4s ease-out 0s;
+      -o-transition: all 0.4s ease-out 0s;
+      transition: all 0.4s ease-out 0s; }
+      .single-team .team-content .social li {
+        display: inline-block;
+        margin: 0 7px; }
+        .single-team .team-content .social li a {
+          font-size: 16px;
+          color: #646464;
+          width: 30px;
+          height: 30px;
+          line-height: 35px;
+          text-align: center;
+          border-radius: 50%;
+          background-color: #ededed;
+          -webkit-transition: all 0.4s ease-out 0s;
+          -moz-transition: all 0.4s ease-out 0s;
+          -ms-transition: all 0.4s ease-out 0s;
+          -o-transition: all 0.4s ease-out 0s;
+          transition: all 0.4s ease-out 0s; }
+          .single-team .team-content .social li a:hover {
+            background-color: #EB3656;
+            color: #fff; }
+  
+  .single-team:hover .team-content {
+    background-color: #fff;
+    margin-top: -60px;
+    -webkit-box-shadow: 0px 6px 16px 0px rgba(235, 54, 86, 0.34);
+    -moz-box-shadow: 0px 6px 16px 0px rgba(235, 54, 86, 0.34);
+    box-shadow: 0px 6px 16px 0px rgba(235, 54, 86, 0.34); }
+    .single-team:hover .team-content .social {
+      margin-top: 25px;
+      opacity: 1;
+      visibility: visible; }
+  
+  
+  
