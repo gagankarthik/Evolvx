@@ -4,6 +4,6 @@ $(window).scroll(function(){
     $('a').toggleClass('scrolled', $(this).scrollTop ()> 100);
     });
 
-    
+/*------------------ aos ----------------*/  
 
 
